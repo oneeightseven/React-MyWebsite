@@ -1,0 +1,47 @@
+.fioHome {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 70px;
+    margin-top: 260px;
+}
+
+.descriptionJob {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px;
+    margin-top: -20px;
+    color: gray;
+    opacity: 1;
+
+}
+
+.nemnogoRight{
+    margin-right: -15px;
+
+}
+
+.nemnogoLeft{
+    margin-left: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .fioHome {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 36px;
+        margin-top: 235px;
+    }
+
+    .descriptionJob {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 25px;
+        margin-top: -5px;
+        color: gray;
+        margin-right: 7px;
+    }
+
+    .nemnogoRight{
+        margin-left: -100px !important;
+    }
+
+    .nemnogoLeft{
+        margin-left: -20px;
+    }
+}

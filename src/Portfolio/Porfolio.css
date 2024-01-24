@@ -1,0 +1,26 @@
+.cardImage{
+    height: 300px !important;
+    width: 450px !important;
+    box-shadow: 0 0 5px blueviolet;
+}
+
+.cardName{
+    margin-left: 40px;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardImage{
+        height: 140px !important;
+        width: 180px !important;
+        box-shadow: 0 0 5px blueviolet;
+    }
+
+    .cardName{
+        margin-left: 23px;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+}

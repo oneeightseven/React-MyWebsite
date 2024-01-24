@@ -1,0 +1,228 @@
+p {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: black;
+    margin-top: 0px;
+}
+
+.resumeButton{
+    color: blueviolet;
+    width: 300px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+    background-color: white !important;
+    box-shadow: 0 0 4px blueviolet;
+    transition: color 1.3s ease, background-color 1.3s ease, box-shadow 1.3s ease, border-radius 2s ease;
+}
+
+h2{
+    margin-top: -4px;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #AC84FF;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+.square2 {
+    width: 30px;
+    height: 30px;
+    background-color: #9765FF;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+.square3 {
+    width: 30px;
+    height: 30px;
+    background-color: #8246FF;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+.square4 {
+    width: 30px;
+    height: 30px;
+    background-color: #582EB2;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+.square5 {
+    width: 30px;
+    height: 30px;
+    background-color: #3B1E7A;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+
+
+.resumeButton:hover{
+    color: white;
+    background-color: blueviolet !important;
+    width: 300px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    box-shadow: 0 0 30px blueviolet;
+    transition: color 1.3s ease, background-color 1.3s ease, box-shadow 1.3s ease, border-radius 2s ease;
+}
+
+.carta{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.fio {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.jobTitle {
+    color: gray;
+    margin-top: -9px;
+}
+
+.description{
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.tableTitle{
+    color: gray;
+    font-size: 18px;
+}
+
+.tableDes{
+    font-size: 18px;
+}
+
+td {
+    border-bottom: 2px solid black;
+}
+
+.tdTechnology {
+    width: 210px;
+    height: 50px;
+}
+
+hr {
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+
+.avatar {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 3px blueviolet;
+}
+
+.title {
+    background-color: transparent;
+    border-right: none;
+}
+
+.tableCard {
+    background-color: transparent;
+    border-left: none;
+}
+
+
+.icos{
+    margin-top: 20px;
+    height: 50px;
+}
+
+img{
+    margin-top: -3px !important;
+    margin-right: 0px !important;
+}
+
+.secondIcos{
+    margin-right: -50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    img{
+        margin-right: -0px !important;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .tableTitle{
+        font-size: 16px;
+    }
+
+    .tableDes{
+        font-size: 16px
+    }
+
+    .up{
+        margin-top: -10px;
+    }
+
+    .upIcons{
+        margin-top: -18px;
+    }
+
+    h2{
+        font-size: 16px;
+        margin-top: 2px;
+    }
+
+    .carta{
+        box-shadow: none;
+    }
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+    .fio{
+        font-size: 24px;
+    }
+
+    .resumeButton{
+        margin-left: 50px;
+    }
+
+    .pHeader {
+        text-align: center;
+    }
+
+    .avatar {
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 50px;
+        width: 300px;
+        height: 400px;
+    }
+}

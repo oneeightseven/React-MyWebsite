@@ -1,0 +1,146 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50px;
+    left: 0;
+    z-index: 9999;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+}
+button
+{
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    background-color: transparent !important;
+    border: none;
+}
+button:active{
+    background-color: transparent !important;
+}
+button:hover{
+    background-color: transparent !important;
+}
+button:visited{
+    background-color: transparent !important;
+}
+
+
+ul {
+    transform: translate(0%, 70%);
+    text-align: center;
+}
+
+.menu__content {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.alert-enter{
+    opacity: 0;
+    transform: scale(0.9);
+
+}
+
+.alert-enter-active{
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+
+    animation-name: borderShow;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.alert-enter-done{
+    animation-name: borderShow;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.alert-exit{
+    animation-name: borderHide;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+}
+
+.alert-exit-active{
+    animation-name: borderHide;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+@keyframes borderShow {
+    0% {
+        background-color: rgba(255, 255, 255, 0.0);
+
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes borderHide {
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        opacity: 1;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.0);
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menu__content {
+        width: 100%;
+    }
+
+    ul {
+        transform: translate(0%, 50%);
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .menu__content {
+        width: 100%;
+    }
+
+    ul {
+        transform: translate(0%, 90%);
+        text-align: center;
+    }
+}

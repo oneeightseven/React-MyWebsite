@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+
+main{
+
+}
+
+
+p{
+    margin: 20px;
+}
+
+.burger-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+    animation-name: rotateOff;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.burger-btn-active{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+
+    animation-name: rotateOn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes rotateOn {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateOff {
+    0% {
+        transform: rotate(90deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.burger-btn-active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
+
+.burger-btn-active span{
+    position: absolute;
+    top: 9px;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
+
+.burger-btn-active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
+
+
+
+.burger-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
+
+.burger-btn span{
+    position: absolute;
+    top: 9px;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
+
+.burger-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    background-color: black;
+    height: 2px;
+}
