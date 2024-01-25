@@ -1,24 +1,24 @@
 import React from 'react';
 import './Menu.css'
 
-const Menu = ({active, setActive}) => {
+const Menu = () => {
     return (
         <div className="menu__content" onClick={e => e.stopPropagation()}>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a>Home</a>
                 </li>
                 <li>
-                    <a href="#">About Me</a>
+                    <a>About me</a>
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a>Resume</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a>Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a>Contact</a>
                 </li>
             </ul>
         </div>

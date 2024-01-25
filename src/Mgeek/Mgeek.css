@@ -1,0 +1,66 @@
+.projectName{
+    font-size: 60px;
+}
+
+.projectDescription{
+    font-size: 20px;
+}
+
+.projectApis{
+    font-size: 32px;
+}
+
+.projectApi{
+    font-size: 20px;
+}
+
+.diagramSecond{
+    height: 600px;
+    width: 750px;
+    margin-left: 100px;
+}
+
+.videoDescription{
+    color: black;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.video-player{
+    width: 640px;
+    height: 360px;
+}
+
+@media screen and (max-width: 768px) {
+    .projectName{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .projectDescription{
+        font-size: 15px;
+    }
+
+    .projectApis{
+        font-size: 15px;
+    }
+    .projectApi{
+        font-size: 10px;
+    }
+
+    .diagramSecond{
+        height: 250px;
+        width: 400px;
+        margin-left: 5px;
+    }
+
+    .videoDescription{
+        color: black;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .video-player{
+        width: 200px;
+        height: 200px;
+    }
+
+}

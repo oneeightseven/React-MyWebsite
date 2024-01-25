@@ -9,10 +9,24 @@ import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contanct";
 import Button from "bootstrap/js/src/button";
 import Home from "./Home/Home";
+import {motion} from "framer-motion";
+
+
+const leftAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.2},
+    }),
+}
 
 function App() {
     const [menuActive, setMenuActive] = useState(false);
-    const [activeComponent, setComponentToShow] = useState('Portfolio');
+    const [activeComponent, setComponentToShow] = useState('Home');
 
     const handleButtonClick = (component) => {
         setComponentToShow(component);
@@ -33,31 +47,29 @@ function App() {
                            unmountOnExit
                            onExited={() => setMenuActive(false)}
             >
-                <div className="menu" onClick={e => e.stopPropagation()}>
-                    <ul>
+                <motion.div initial="hidden"
+                            whileInView="visible"
+                            viewport={{once: true}} className="menu" onClick={e => e.stopPropagation()}>
+                    <ul className='mt-5'>
                         <li>
-                            <button onClick={() => handleButtonClick('Home')}>Home</button>
+                            <motion.button custom={1.5} variants={leftAnimation} onClick={() => handleButtonClick('Home')}>HOME</motion.button>
                         </li>
                         <li>
-                            <button onClick={() => handleButtonClick('AboutMe')}>About Me</button>
+                            <motion.button custom={2} variants={leftAnimation} onClick={() => handleButtonClick('AboutMe')}>ABOUT ME</motion.button>
                         </li>
                         <li>
-                            <button onClick={() => handleButtonClick('Resume')}>Resume</button>
+                            <motion.button custom={2.5} variants={leftAnimation} onClick={() => handleButtonClick('Portfolio')}>PORTFOLIO</motion.button>
                         </li>
                         <li>
-                            <button onClick={() => handleButtonClick('Portfolio')}>Portfolio</button>
-                        </li>
-                        <li>
-                            <button onClick={() => handleButtonClick('Contact')}>Contact</button>
+                            <motion.button custom={3} variants={leftAnimation} onClick={() => handleButtonClick('Contact')}>CONTACT</motion.button>
                         </li>
                     </ul>
-                </div>
+                </motion.div>
             </CSSTransition>
             <main>
                 <div className={"col-xl-12"}>
                     {activeComponent === 'Home' && <Home/>}
                     {activeComponent === 'AboutMe' && <AboutMe/>}
-                    {activeComponent === 'Resume' && <Resume/>}
                     {activeComponent === 'Portfolio' && <Portfolio/>}
                     {activeComponent === 'Contact' && <Contact/>}
                 </div>

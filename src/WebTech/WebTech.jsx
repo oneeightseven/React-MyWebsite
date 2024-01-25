@@ -1,8 +1,6 @@
 import React from 'react';
 import '../WebTech/WebTech.css'
 import {motion} from "framer-motion";
-import ReactPlayer from "react-player";
-
 
 const leftAnimation = {
     hidden: {
@@ -140,12 +138,12 @@ const WebTech = () => {
             <motion.div className='container'>
 
                 <motion.div className='row align-items-center ' initial="hidden" whileInView="visible" viewport={{once: true}}>
-                    <motion.div className={'col-6 mt-2'} custom={3} variants={leftAnimation}>
+                    <motion.div className={'col-6 mt-xl-2'} custom={3} variants={leftAnimation}>
                         <p className={'videoDescription text-center'}>A JWT token is used for authorization. The token
                             and payload are stored in browser cookies.
                             Additionally, all payloads are first encrypted and only then added to cookies.</p>
                     </motion.div>
-                    <motion.div className={'col-6 mt-5'} custom={3} variants={rightAnimation}>
+                    <motion.div className={'col-6 mt-xl-5'} custom={3} variants={rightAnimation}>
                             <video className={'video-player'} controls loop src = "https://imagess.hb.ru-msk.vkcs.cloud/Authroize.mp4"
                                 />
                     </motion.div>
