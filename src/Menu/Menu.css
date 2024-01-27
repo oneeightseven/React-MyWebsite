@@ -2,9 +2,9 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top: 50px;
+    top: 0px;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .menu.active {
@@ -33,12 +33,14 @@ button
     color: black;
     background-color: transparent !important;
     border: none;
+    z-index: 9999;
 }
 
 
 
 button:active{
     background-color: transparent !important;
+    z-index: 9999;
 }
 button:hover{
     background-color: transparent !important;

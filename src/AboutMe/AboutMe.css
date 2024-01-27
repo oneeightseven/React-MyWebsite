@@ -24,6 +24,8 @@ h1{
     background-color: white !important;
     box-shadow: 0 0 4px blueviolet;
     transition: color 1.3s ease, background-color 1.3s ease, box-shadow 1.3s ease, border-radius 2s ease;
+    margin-top: 70px !important;
+    margin-bottom: 25px;
 }
 
 h2{
@@ -211,6 +213,8 @@ img{
     }
 
     .resumeButton{
+        margin-top: 15px !important;
+        margin-bottom: 10px !important;
         margin-left: 50px;
     }
 

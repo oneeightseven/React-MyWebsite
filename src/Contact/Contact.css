@@ -3,7 +3,7 @@ p{
     font-size: 33px;
 }
 
-.aaa{
+.contactDescription{
     margin-left: -120px;
     margin-top: 5px;
 }
@@ -15,7 +15,7 @@ p{
 
 }
 
-.ia{
+.contactImage{
     margin-top: -20px !important;
     height: 100px !important;
     margin-right: 120px !important;
@@ -23,7 +23,7 @@ p{
 
 @media screen and (max-width: 768px) {
 
-    .aaa{
+    .contactDescription{
         margin-left: 0;
         margin-top: 5px;
     }
@@ -33,7 +33,7 @@ p{
         font-size: 20px;
     }
 
-    .ia{
+    .contactImage{
         margin-top: -20px !important;
         height: 80px !important;
         margin-right: -30px !important;

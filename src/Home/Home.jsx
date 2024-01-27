@@ -1,18 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Home.css'
 import {motion} from "framer-motion";
-
-const upDownAnimation = {
-    hidden: {
-        y: -100,
-        opacity: 0,
-    },
-    visible: custom => ({
-        y: 0,
-        opacity: 1,
-        transition: {delay: custom * 0.2},
-    }),
-}
+import * as Animations from "../Animations/Animations";
 
 const Home = () => {
 
@@ -35,14 +24,14 @@ const Home = () => {
                         initial="hidden"
                         whileInView="visible">
                 <div className={'row'}>
-                    <motion.div custom={2} variants={upDownAnimation} className={'col-12 text-center'}>
+                    <motion.div custom={2} variants={Animations.upDownAnimation} className={'col-12 text-center'}>
                         <p className='fioHome'>ALEXANDER VOLKOV</p>
                     </motion.div>
                     <motion.div initial="hidden"
-                                whileInView="visible" key={blocks[index]} custom={1} variants={upDownAnimation} className={'col-6 text-end'}>
+                                whileInView="visible" key={blocks[index]} custom={1} variants={Animations.upDownAnimation} className={'col-6 text-end'}>
                         <p style={{color: 'blueviolet'}} className='descriptionJob nemngoRight'>{blocks[index]}</p>
                     </motion.div>
-                    <motion.div custom={0.5} variants={upDownAnimation} className={'col-6 text-start'}>
+                    <motion.div custom={0.5} variants={Animations.upDownAnimation} className={'col-6 text-start'}>
                         <p className='descriptionJob nemnogoLeft'>Developer</p>
                     </motion.div>
                 </div>

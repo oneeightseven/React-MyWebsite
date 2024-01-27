@@ -4,7 +4,6 @@ import Menu from "./Menu/Menu";
 import React, {useState} from "react";
 import { CSSTransition } from "react-transition-group";
 import AboutMe from "./AboutMe/AboutMe";
-import Resume from "./Resume/Resume";
 import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contanct";
 import Button from "bootstrap/js/src/button";

@@ -47,6 +47,9 @@ p{
     animation-duration: 500ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
+
+    z-index: 999999;
+
 }
 
 @keyframes rotateOn {
@@ -77,6 +80,8 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
+
 }
 
 .burger-btn-active span{
@@ -85,6 +90,8 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
+
 }
 
 .burger-btn-active:after {
@@ -94,6 +101,8 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
+
 }
 
 
@@ -105,6 +114,8 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
+
 }
 
 .burger-btn span{
@@ -113,6 +124,8 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
+
 }
 
 .burger-btn:after {
@@ -122,4 +135,5 @@ p{
     width: 20px;
     background-color: black;
     height: 2px;
+
 }

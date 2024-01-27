@@ -19,7 +19,11 @@
     width: 750px;
     margin-left: 100px;
 }
-
+.linkToProject{
+    margin-top: -40px !important;
+    width: 70px;
+    margin-left: 50px;
+}
 .videoDescription{
     color: black;
     font-size: 25px;
@@ -31,6 +35,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .linkToProject{
+        margin-top: 15px !important;
+        margin-bottom: -15px;
+        width: 60px;
+        margin-left: 0px;
+    }
     .projectName{
         font-size: 25px;
         font-weight: bold;
@@ -47,7 +57,7 @@
     }
 
     .diagramSecond{
-        height: 250px;
+        height: 320px;
         width: 400px;
         margin-left: 5px;
     }

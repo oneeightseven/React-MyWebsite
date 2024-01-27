@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import {motion} from "framer-motion";
 import './Porfolio.css'
-import Home from "../Home/Home";
-import AboutMe from "../AboutMe/AboutMe";
 import WebTech from "../WebTech/WebTech";
 import Mgeek from "../Mgeek/Mgeek";
+import * as Animations from "../Animations/Animations";
 
 const Portfolio = () => {
 
@@ -16,32 +15,36 @@ const Portfolio = () => {
 
     return (
         <>
-            <div className='container mt-5 mt-xl-3'>
+            <motion.div
+                className='container mt-5 mt-xl-3'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true}}>
                 <div className='col-xl-12'>
                     <div className='row'>
-                        <div className='col-xl-4 col-6 offset-xl-1 text-center'>
+                        <motion.div custom={1} variants={Animations.leftAnimation} className='col-xl-4 col-6 offset-xl-1 text-center'>
                             <img className='cardImage'
                                  src={"https://imagess.hb.ru-msk.vkcs.cloud/WebTech.png"}/>
-                        </div>
-                        <div className='col-xl-4 col-6 offset-xl-2 text-center'>
+                        </motion.div>
+                        <motion.div custom={1} variants={Animations.rightAnimation} className='col-xl-4 col-6 offset-xl-2 text-center'>
                             <img className='cardImage'
                                  src={"https://imagess.hb.ru-msk.vkcs.cloud/Mgeek.png"}/>
-                        </div>
+                        </motion.div>
                         <div className='col-xl-1 text-center'>
                         </div>
-                        <div className='col-xl-4 col-6 offset-xl-1 text-center'>
+                        <motion.div custom={2} variants={Animations.leftAnimation} className='col-xl-4 col-6 offset-xl-1 text-center'>
                             <button onClick={() => handleButtonClick('WebTech')}>
                                 <p className='cardName'>.NET8-MinimalAPI-React</p>
                             </button>
-                        </div>
-                        <div className='col-xl-4 col-6 offset-xl-2 text-center'>
+                        </motion.div>
+                        <motion.div custom={2} variants={Animations.rightAnimation} className='col-xl-4 col-6 offset-xl-2 text-center'>
                             <button onClick={() => handleButtonClick('Mgeek')}>
                                 <p className='cardName'>.NET8-WebAPI-Blazor </p>
                             </button>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className='container'>
                 <div className='col-xl-12'>
                     <div className='row'>
